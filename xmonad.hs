@@ -138,7 +138,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_h), spawn $ "termite 'bashhtop task manager' -e bashtop" )
   , ((modMask, xK_q), kill )
   , ((modMask, xK_d), spawn $ "gmrun" )
-  , ((modMask, xK_x), spawn $ "arcolinux-logout" )
+  , ((modMask, xK_x), spawn $ "oblogout" )
   , ((modMask, xK_Return), spawn $ "termite" )
   , ((modMask, xK_F1), spawn $ "firefox" )
   , ((modMask, xK_F2), spawn $ "code" )
