@@ -18,7 +18,7 @@ function run {
 #xrandr --output HDMI2 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 
 #launch polybar 
-(sleep 2; run $HOME/.config/polybar/polybar-12/launch.sh) &
+$HOME/.config/polybar/polybar-12/launch.sh &
 
 #change your keyboard if you need it
 #setxkbmap -layout be
@@ -30,16 +30,16 @@ xsetroot -cursor_name left_ptr &
 #run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 
 #Some ways to set your wallpaper besides variety or nitrogen
-feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+feh --bg-fill ~/.config/variety/Favorites/sunset-over-matterhorn-3840x2560.jpg &
 #start the conky to learn the shortcuts
 #(conky -c $HOME/.xmonad/scripts/system-overview) &
 
 #starting utility applications at boot time
-#run nm-applet &
+run nm-applet &
 run xfce4-power-manager &
-#run volumeicon &
+run volumeicon &
 numlockx off &
-#blueberry-tray &
+blueberry-tray &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
