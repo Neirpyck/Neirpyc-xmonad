@@ -135,7 +135,6 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   -- SUPER + FUNCTION KEYS
 
   [ ((modMask, xK_f), sendMessage $ Toggle NBFULL)
-  , ((modMask, xK_h), spawn $ "termite 'bashhtop task manager' -e bashtop" )
   , ((modMask, xK_q), kill )
   , ((modMask, xK_d), spawn $ "gmrun" )
   , ((modMask, xK_x), spawn $ "oblogout" )
